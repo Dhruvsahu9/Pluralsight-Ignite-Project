@@ -19,7 +19,8 @@ public class LoadCaches {
      * @throws Exception If failed.
      **/
     public static void main(String[] args) throws Exception {
-        try (Ignite ignite = Ignition.start("DuckAirlines-client.xml")) {
+        Ignition.setClientMode(true);
+        try (Ignite ignite = Ignition.start("DuckAirlines-server.xml")) {
             System.out.println(">>> Loading caches...");
 
             System.out.println(">>> Loading cache: AircraftCache");

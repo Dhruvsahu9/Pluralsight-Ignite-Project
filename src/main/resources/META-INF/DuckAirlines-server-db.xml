@@ -22,7 +22,6 @@
     </bean>
 
     <bean class="org.apache.ignite.configuration.IgniteConfiguration">
-        <property name="clientMode" value="true"/>
         <property name="igniteInstanceName" value="DuckAirlines"/>
 
         <property name="discoverySpi">
