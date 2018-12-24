@@ -1,4 +1,4 @@
-package com.pluralsight.duckair;
+package com.pluralsight.duckair.models;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

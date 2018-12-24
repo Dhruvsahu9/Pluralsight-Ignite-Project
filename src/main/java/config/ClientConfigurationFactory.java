@@ -161,7 +161,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Aircraft");
+        qryEntity.setValueType("Aircraft");
         qryEntity.setKeyFieldName("aircraftId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -222,7 +222,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Aircraft");
+        type.setValueType("Aircraft");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("aircraft");
 
@@ -282,7 +282,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Airports");
+        qryEntity.setValueType("Airports");
         qryEntity.setKeyFieldName("id");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -420,7 +420,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Airports");
+        type.setValueType("Airports");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("airports");
 
@@ -574,7 +574,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Crew");
+        qryEntity.setValueType("Crew");
         qryEntity.setKeyFieldName("crewId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -622,7 +622,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Crew");
+        type.setValueType("Crew");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("crew");
 
@@ -675,7 +675,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Customers");
+        qryEntity.setValueType("Customers");
         qryEntity.setKeyFieldName("id");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -723,7 +723,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Customers");
+        type.setValueType("Customers");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("customers");
 
@@ -779,7 +779,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Fix");
+        qryEntity.setValueType("Fix");
         qryEntity.setKeyFieldName("id");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -838,7 +838,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Fix");
+        type.setValueType("Fix");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("fix");
 
@@ -907,7 +907,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Fleet");
+        qryEntity.setValueType("Fleet");
         qryEntity.setKeyFieldName("fleetId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -952,7 +952,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Fleet");
+        type.setValueType("Fleet");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("fleet");
 
@@ -1004,7 +1004,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.FlightPlans");
+        qryEntity.setValueType("FlightPlans");
         qryEntity.setTableName("flight_plans");
         qryEntity.setKeyFieldName("flightPlanId");
 
@@ -1062,7 +1062,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.FlightPlans");
+        type.setValueType("FlightPlans");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("flight_plans");
 
@@ -1120,7 +1120,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Flights");
+        qryEntity.setValueType("Flights");
         qryEntity.setKeyFieldName("flightId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -1185,7 +1185,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Flights");
+        type.setValueType("Flights");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("flights");
 
@@ -1247,7 +1247,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.FrequentFlyer");
+        qryEntity.setValueType("FrequentFlyer");
         qryEntity.setTableName("frequent_flyer");
         qryEntity.setKeyFieldName("id");
 
@@ -1294,7 +1294,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.FrequentFlyer");
+        type.setValueType("FrequentFlyer");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("frequent_flyer");
 
@@ -1349,7 +1349,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Navaid");
+        qryEntity.setValueType("Navaid");
         qryEntity.setKeyFieldName("id");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -1449,7 +1449,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Navaid");
+        type.setValueType("Navaid");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("navaid");
 
@@ -1559,7 +1559,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.PilotLogs");
+        qryEntity.setValueType("PilotLogs");
         qryEntity.setTableName("pilot_logs");
         qryEntity.setKeyFieldName("logId");
 
@@ -1631,7 +1631,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.PilotLogs");
+        type.setValueType("PilotLogs");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("pilot_logs");
 
@@ -1698,7 +1698,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Reservations");
+        qryEntity.setValueType("Reservations");
         qryEntity.setKeyFieldName("reservationId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -1741,7 +1741,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Reservations");
+        type.setValueType("Reservations");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("reservations");
 
@@ -1792,7 +1792,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.RouteMetadata");
+        qryEntity.setValueType("RouteMetadata");
         qryEntity.setTableName("route_metadata");
         qryEntity.setKeyFieldName("routeMetadataId");
 
@@ -1841,7 +1841,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.RouteMetadata");
+        type.setValueType("RouteMetadata");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("route_metadata");
 
@@ -1895,7 +1895,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.RouteSegments");
+        qryEntity.setValueType("RouteSegments");
         qryEntity.setTableName("route_segments");
         qryEntity.setKeyFieldName("rowId");
 
@@ -1953,7 +1953,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.RouteSegments");
+        type.setValueType("RouteSegments");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("route_segments");
 
@@ -2012,7 +2012,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Runway");
+        qryEntity.setValueType("Runway");
         qryEntity.setKeyFieldName("id");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -2179,7 +2179,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Runway");
+        type.setValueType("Runway");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("runway");
 
@@ -2362,7 +2362,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.String");
-        qryEntity.setValueType("com.pluralsight.duckair.Telemetry");
+        qryEntity.setValueType("Telemetry");
         qryEntity.setKeyFieldName("rowId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -2415,7 +2415,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(String.class);
-        type.setValueType("com.pluralsight.duckair.Telemetry");
+        type.setValueType("Telemetry");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("telemetry");
 
@@ -2472,7 +2472,7 @@ public class ClientConfigurationFactory {
         QueryEntity qryEntity = new QueryEntity();
 
         qryEntity.setKeyType("java.lang.Integer");
-        qryEntity.setValueType("com.pluralsight.duckair.Winds");
+        qryEntity.setValueType("Winds");
         qryEntity.setKeyFieldName("windsId");
 
         HashSet<String> keyFields = new HashSet<>();
@@ -2515,7 +2515,7 @@ public class ClientConfigurationFactory {
 
         type.setCacheName(cacheName);
         type.setKeyType(Integer.class);
-        type.setValueType("com.pluralsight.duckair.Winds");
+        type.setValueType("Winds");
         type.setDatabaseSchema("duckairlines");
         type.setDatabaseTable("winds");
 

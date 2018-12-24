@@ -80,7 +80,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="AircraftCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Aircraft"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Aircraft"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="aircraft"/>
 
@@ -221,7 +221,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Aircraft"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Aircraft"/>
                                 <property name="keyFieldName" value="aircraftId"/>
 
                                 <property name="keyFields">
@@ -287,7 +287,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="AirportsCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Airports"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Airports"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="airports"/>
 
@@ -1274,7 +1274,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Airports"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Airports"/>
                                 <property name="keyFieldName" value="id"/>
 
                                 <property name="keyFields">
@@ -1417,7 +1417,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="CrewCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Crew"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Crew"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="crew"/>
 
@@ -1495,7 +1495,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Crew"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Crew"/>
                                 <property name="keyFieldName" value="crewId"/>
 
                                 <property name="keyFields">
@@ -1548,7 +1548,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="CustomersCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Customers"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Customers"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="customers"/>
 
@@ -1653,7 +1653,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Customers"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Customers"/>
                                 <property name="keyFieldName" value="id"/>
 
                                 <property name="keyFields">
@@ -1706,7 +1706,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="FixCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Fix"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Fix"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="fix"/>
 
@@ -1928,7 +1928,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Fix"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Fix"/>
                                 <property name="keyFieldName" value="id"/>
 
                                 <property name="keyFields">
@@ -1992,7 +1992,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="FleetCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Fleet"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Fleet"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="fleet"/>
 
@@ -2061,7 +2061,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Fleet"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Fleet"/>
                                 <property name="keyFieldName" value="fleetId"/>
 
                                 <property name="keyFields">
@@ -2111,7 +2111,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="FlightPlansCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.FlightPlans"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.FlightPlans"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="flight_plans"/>
 
@@ -2234,7 +2234,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.FlightPlans"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.FlightPlans"/>
                                 <property name="tableName" value="flight_plans"/>
                                 <property name="keyFieldName" value="flightPlanId"/>
 
@@ -2297,7 +2297,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="FlightsCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Flights"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Flights"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="flights"/>
 
@@ -2456,7 +2456,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Flights"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Flights"/>
                                 <property name="keyFieldName" value="flightId"/>
 
                                 <property name="keyFields">
@@ -2526,7 +2526,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="FrequentFlyerCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.FrequentFlyer"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.FrequentFlyer"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="frequent_flyer"/>
 
@@ -2622,7 +2622,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.FrequentFlyer"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.FrequentFlyer"/>
                                 <property name="tableName" value="frequent_flyer"/>
                                 <property name="keyFieldName" value="id"/>
 
@@ -2674,7 +2674,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="NavaidCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Navaid"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Navaid"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="navaid"/>
 
@@ -3265,7 +3265,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Navaid"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Navaid"/>
                                 <property name="keyFieldName" value="id"/>
 
                                 <property name="keyFields">
@@ -3370,7 +3370,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="PilotLogsCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.PilotLogs"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.PilotLogs"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="pilot_logs"/>
 
@@ -3574,7 +3574,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.PilotLogs"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.PilotLogs"/>
                                 <property name="tableName" value="pilot_logs"/>
                                 <property name="keyFieldName" value="logId"/>
 
@@ -3651,7 +3651,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="ReservationsCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Reservations"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Reservations"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="reservations"/>
 
@@ -3711,7 +3711,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Reservations"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Reservations"/>
                                 <property name="keyFieldName" value="reservationId"/>
 
                                 <property name="keyFields">
@@ -3759,7 +3759,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="RouteMetadataCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.RouteMetadata"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.RouteMetadata"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="route_metadata"/>
 
@@ -3846,7 +3846,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.RouteMetadata"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.RouteMetadata"/>
                                 <property name="tableName" value="route_metadata"/>
                                 <property name="keyFieldName" value="routeMetadataId"/>
 
@@ -3900,7 +3900,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="RouteSegmentsCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.RouteSegments"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.RouteSegments"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="route_segments"/>
 
@@ -4032,7 +4032,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.RouteSegments"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.RouteSegments"/>
                                 <property name="tableName" value="route_segments"/>
                                 <property name="keyFieldName" value="rowId"/>
 
@@ -4095,7 +4095,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="RunwayCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Runway"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Runway"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="runway"/>
 
@@ -5343,7 +5343,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Runway"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Runway"/>
                                 <property name="keyFieldName" value="id"/>
 
                                 <property name="keyFields">
@@ -5515,7 +5515,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="TelemetryCache"/>
                                         <property name="keyType" value="java.lang.String"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Telemetry"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Telemetry"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="telemetry"/>
 
@@ -5629,7 +5629,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.String"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Telemetry"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Telemetry"/>
                                 <property name="keyFieldName" value="rowId"/>
 
                                 <property name="keyFields">
@@ -5687,7 +5687,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="WindsCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="com.pluralsight.duckair.Winds"/>
+                                        <property name="valueType" value="com.pluralsight.duckair.models.Winds"/>
                                         <property name="databaseSchema" value="duckairlines"/>
                                         <property name="databaseTable" value="winds"/>
 
@@ -5765,7 +5765,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.pluralsight.duckair.Winds"/>
+                                <property name="valueType" value="com.pluralsight.duckair.models.Winds"/>
                                 <property name="keyFieldName" value="windsId"/>
 
                                 <property name="keyFields">
