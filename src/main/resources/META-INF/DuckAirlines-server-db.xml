@@ -38,6 +38,22 @@
             </bean>
         </property>
 
+        <!-- *****************************************************************
+           Module 4: The code directly below demonstrates how to configure
+           node attributes in code.
+           To configure this node to be a "Flight Operations" node,
+           comment out: put("ROLE", "FlightReservations"); and
+           uncomment:   put("ROLE", "FlightOperations");. -->
+
+        <property name="userAttributes">
+            <map>
+                <entry key="ROLE" value="FlightReservations" />
+                <!--<entry key="ROLE" value="FlightOperations" />-->
+            </map>
+        </property>
+
+        <!-- ***************************************************************** -->
+
         <property name="atomicConfiguration">
             <bean class="org.apache.ignite.configuration.AtomicConfiguration">
                 <property name="cacheMode" value="REPLICATED"/>

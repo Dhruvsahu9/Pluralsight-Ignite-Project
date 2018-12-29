@@ -68,6 +68,21 @@ public class ServerConfigurationFactory {
     public static IgniteConfiguration createConfiguration() throws Exception {
         IgniteConfiguration cfg = new IgniteConfiguration();
 
+        /*******************************************************************
+         *  Module 4: The code directly below demonstrates how to configure
+         *  node attributes in code.
+         *  To configure this node to be a "Flight Operations" node,
+         *  comment out: put("ROLE", "FlightReservations"); and
+         *  uncomment:   put("ROLE", "FlightOperations");.
+         */
+
+        cfg.setUserAttributes(new HashMap<String, String>() {{
+            put("ROLE", "FlightReservations");
+            /*put("ROLE", "FlightOperations");*/
+        }});
+
+        /*******************************************************************/
+
         cfg.setIgniteInstanceName("DuckAirlines");
 
         TcpDiscoverySpi discovery = new TcpDiscoverySpi();
