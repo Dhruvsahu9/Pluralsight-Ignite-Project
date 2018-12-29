@@ -13,6 +13,30 @@
     <bean class="org.apache.ignite.configuration.IgniteConfiguration">
         <property name="igniteInstanceName" value="DuckAirlines"/>
 
+        <!-- *****************************************************************
+           Module 4: The code directly below demonstrates how to configure the cluster
+           to encrypt traffic between the nodes.
+
+           NOTE: When you enable TLS/SSL you will be required to supply a username and
+                 password when connecting to the cluster from anything using the REST
+                 web services.  The default username / password is: ignite / ignite.
+                 Also, you will need to add these two lines to the web agent
+                 default.properties file:
+                    node-login=ignite
+                    node-password=ignite
+         -->
+
+        <property name="sslContextFactory">
+            <bean class="org.apache.ignite.ssl.SslContextFactory">
+                <property name="keyStoreFilePath" value="C:\Pluralsight\keystore\keystore.jks"/>
+                <property name="keyStorePassword" value="changeit" />
+                <property name="trustStoreFilePath" value="C:\Pluralsight\keystore\cacerts.jks" />
+                <property name="trustStorePassword" value="changeit" />
+            </bean>
+        </property>
+
+        <!-- ***************************************************************** -->
+
         <property name="discoverySpi">
             <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
                 <property name="ipFinder">
@@ -26,6 +50,22 @@
                 </property>
             </bean>
         </property>
+
+        <!-- *****************************************************************
+           Module 4: The code directly below demonstrates how to configure
+           node attributes in code.
+           To configure this node to be a "Flight Operations" node,
+           comment out: put("ROLE", "FlightReservations"); and
+           uncomment:   put("ROLE", "FlightOperations");. -->
+
+        <property name="userAttributes">
+            <map>
+                <entry key="ROLE" value="FlightReservations" />
+                <!--<entry key="ROLE" value="FlightOperations" />-->
+            </map>
+        </property>
+
+        <!-- ***************************************************************** -->
 
         <property name="atomicConfiguration">
             <bean class="org.apache.ignite.configuration.AtomicConfiguration">
