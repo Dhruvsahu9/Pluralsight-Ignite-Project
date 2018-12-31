@@ -17,7 +17,7 @@ import javax.cache.event.CacheEntryListenerException;
 import javax.cache.event.CacheEntryUpdatedListener;
 import java.math.BigDecimal;
 
-public class ContinuousQueryExample {
+public class TelemetryContinuousQuery {
     public static void main(String[] args) {
         Ignition.setClientMode(true);
         try (Ignite ignite = Ignition.start("DuckAirlines-server.xml")) {
