@@ -1,4 +1,4 @@
-package com.pluralsight.duckair.model;
+package com.pluralsight.duckair.key;
 
 import org.apache.ignite.cache.affinity.AffinityKeyMapped;
 

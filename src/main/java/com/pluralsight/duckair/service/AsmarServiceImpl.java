@@ -5,7 +5,7 @@
 package com.pluralsight.duckair.service;
 
 import com.pluralsight.duckair.model.AsmarEvent;
-import com.pluralsight.duckair.model.AsmarEventKey;
+import com.pluralsight.duckair.key.AsmarEventKey;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.resources.IgniteInstanceResource;

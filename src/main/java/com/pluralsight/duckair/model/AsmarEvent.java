@@ -1,9 +1,6 @@
-/*
- * Copyright (c) 2019. Edward Curren
- */
-
 package com.pluralsight.duckair.model;
 
+import com.pluralsight.duckair.key.AsmarEventKey;
 import org.apache.ignite.cache.query.annotations.QuerySqlField;
 
 import java.sql.Timestamp;
