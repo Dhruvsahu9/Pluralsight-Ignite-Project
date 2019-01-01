@@ -10,7 +10,7 @@
  *   configuration file as well as in ServerConfigurationFactory.java
  */
 
-package com.pluralsight.duckair.apps;
+package com.pluralsight.duckair.app;
 
 import org.apache.ignite.Ignite;
 import org.apache.ignite.Ignition;

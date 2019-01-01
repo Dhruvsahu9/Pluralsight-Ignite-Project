@@ -1,6 +1,6 @@
-package com.pluralsight.duckair.apps;
+package com.pluralsight.duckair.app;
 
-import com.pluralsight.duckair.models.Reservations;
+import com.pluralsight.duckair.model.Reservations;
 import com.pluralsight.duckair.query.ReservationQueries;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;

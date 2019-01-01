@@ -2,7 +2,7 @@
  * Copyright (c) 2018. Edward Curren
  */
 
-package com.pluralsight.duckair.apps;
+package com.pluralsight.duckair.app;
 
 import com.pluralsight.duckair.query.TelemetryContinuousQuery;
 

@@ -1,6 +1,6 @@
 package com.pluralsight.duckair.query;
 
-import com.pluralsight.duckair.models.Reservations;
+import com.pluralsight.duckair.model.Reservations;
 
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
@@ -18,6 +18,17 @@ public class ReservationQueries {
     public ReservationQueries(Ignite ignite) {
         this.ignite = ignite;
         reservationsCache = ignite.getOrCreateCache("ReservationsCache");
+    }
+
+    public FieldsQueryCursor<List<?>> getFlightManifest(String flightNumber) {
+        SqlFieldsQuery flightManifestQuery = new SqlFieldsQuery(
+                "SELECT f.flight_number, c.first_name, c.last_name, r.seat, ff.account, ff.level " +
+                        "FROM reservations r, \"CustomersCache\".customers c, " +
+                        "\"FrequentFlyerCache\".frequent_flyer ff, \"FlightsCache\".flights f " +
+                        "WHERE  r.customer_id = c.id AND ff.customer_id = r.customer_id " +
+                        "AND f.flight_id = r.flight_id AND f.flight_number = 530;");
+
+        return reservationsCache.query(flightManifestQuery);
     }
 
     public CacheEntry<String, Reservations> getRandomReservation() {

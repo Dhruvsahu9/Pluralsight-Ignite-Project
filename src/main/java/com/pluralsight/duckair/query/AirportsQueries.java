@@ -1,10 +1,9 @@
 package com.pluralsight.duckair.query;
 
-import com.pluralsight.duckair.models.Airports;
+import com.pluralsight.duckair.model.Airports;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
-import org.apache.ignite.cache.CacheEntry;
 import org.apache.ignite.cache.query.QueryCursor;
 import org.apache.ignite.cache.query.SqlFieldsQuery;
 import org.apache.ignite.cache.query.SqlQuery;
@@ -15,14 +14,12 @@ import java.util.List;
 public class AirportsQueries {
     private IgniteCache<String, Airports> airportsCache;
 
-    public static void main(String[] args) {
-        AirportsQueries airportsQueries = new AirportsQueries();
-
+    public void runQuery() {
         Ignition.setClientMode(true);
         try(Ignite ignite = Ignition.start("DuckAirlines-server.xml")) {
-            airportsQueries.airportsCache = ignite.getOrCreateCache("AirportsCache");
-            airportsQueries.queryBySqlFields();
-            airportsQueries.queryBySql();
+            airportsCache = ignite.getOrCreateCache("AirportsCache");
+            queryBySqlFields();
+            queryBySql();
         }
     }
 
