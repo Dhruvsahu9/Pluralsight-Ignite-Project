@@ -26,7 +26,7 @@ public class FlightsReport {
         }
     }
 
-    public void getFlightManifest() {
+    public void showFlightManifest() {
         ReservationQueries reservationQueries = new ReservationQueries(ignite);
         FieldsQueryCursor<List<?>> resultSet = reservationQueries.getFlightManifest("530");
         System.out.println("\nFlight Manifest Query Result:");
