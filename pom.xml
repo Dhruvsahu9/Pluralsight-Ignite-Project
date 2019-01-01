@@ -14,6 +14,10 @@
             <id>GridGain External Repository</id>
             <url>http://www.gridgainsystems.com/nexus/content/repositories/external</url>
         </repository>
+        <repository>
+            <id>ps-gsai</id>
+            <url>https://www.myget.org/F/ps-gsai/maven/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -52,6 +56,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.13</version>
         </dependency>
+        <dependency>
+            <groupId>com.pluralsight.duckair</groupId>
+            <artifactId>geocalc</artifactId>
+            <version>0.5.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>
