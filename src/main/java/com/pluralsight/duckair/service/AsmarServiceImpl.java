@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2019. Edward Curren
- */
-
 package com.pluralsight.duckair.service;
 
 import com.pluralsight.duckair.model.AsmarEvent;
