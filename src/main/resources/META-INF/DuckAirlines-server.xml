@@ -16,20 +16,20 @@
         policy for the cluster.
     -->
 
-    <bean id="expiryPolicy" class="javax.cache.configuration.FactoryBuilder$SingletonFactory">
-        <constructor-arg>
-            <bean class="javax.cache.expiry.CreatedExpiryPolicy">
-                <constructor-arg>
-                    <bean class="javax.cache.expiry.Duration">
-                        <constructor-arg type="java.util.concurrent.TimeUnit" value="MINUTES"/>
-                        <constructor-arg value="20"/>
-                    </bean>
-                </constructor-arg>
-            </bean>
-        </constructor-arg>
-    </bean>
+        <bean id="expiryPolicy" class="javax.cache.configuration.FactoryBuilder$SingletonFactory">
+            <constructor-arg>
+                <bean class="javax.cache.expiry.CreatedExpiryPolicy">
+                    <constructor-arg>
+                        <bean class="javax.cache.expiry.Duration">
+                            <constructor-arg type="java.util.concurrent.TimeUnit" value="MINUTES"/>
+                            <constructor-arg value="20"/>
+                        </bean>
+                    </constructor-arg>
+                </bean>
+            </constructor-arg>
+        </bean>
 
-    <bean class="org.apache.ignite.configuration.IgniteConfiguration">
+        <bean class="org.apache.ignite.configuration.IgniteConfiguration">
 
         <!-- ***************************************************************** -->
 
